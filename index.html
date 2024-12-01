@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Expenses tracker</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="current-balance">
+        <div class="title">
+          <h1>Current Balance</h1>
+          <p id="balance"></p>
+        </div>
+        <div class="output">
+          <div class="income">
+            <div class="icons">
+              <i class="fa-solid fa-angle-up" style="color: #4dc56282"></i>
+            </div>
+            Income
+            <br />
+            <div id="income-amount">$0</div>
+          </div>
+          <div class="Expenses">
+            <div class="icons">
+              <i class="fa-solid fa-angle-down" style="color: #ff272782"></i>
+            </div>
+            Expenses
+            <br />
+            <div id="expense-amount">$0</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="transactions">
+        <h2>Transactions</h2>
+        <hr />
+        <div class="js-div">
+          <!-- Dynamic content will be added here  -->
+          <!-- <div class="transaction">
+            <p>text</p>
+            <p>$300</p>
+            <button id="delete"><i class="fa-regular fa-trash-can"></i></button>
+          </div> -->
+        </div>
+      </div>
+      <hr />
+
+      <form>
+        <span id="invalid"></span>
+
+        <input
+          type="text"
+          name="transaction-text"
+          id="transaction-text"
+          placeholder="Transaction Name"
+        />
+
+        <input
+          type="number"
+          name="transaction-amount"
+          id="amount"
+          placeholder="Amount"
+        />
+        <button id="submit">Add</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

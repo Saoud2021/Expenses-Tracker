@@ -1,0 +1,121 @@
+body {
+  background-color: #155263;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "pt sans";
+}
+.container {
+  margin-top: 3rem;
+  height: auto;
+  background-color: antiquewhite;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  box-shadow: 1px 1px 3px;
+  gap: 0.5rem;
+}
+.current-balance {
+  background: rgb(5, 9, 62);
+  background: linear-gradient(90deg, #ff6f3c 10%, #ff9a3c 104%);
+  color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 1px 1px 3px black;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.output {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin: 1rem;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+}
+.icons {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #ffffff45;
+  width: min-content;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+hr {
+  border: solid black 0.1rem;
+  opacity: 10%;
+  margin: 0;
+}
+.transaction {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 1px 1px 3px;
+}
+.transaction p:nth-child(2) {
+  margin-left: auto;
+}
+#delete {
+  border: none;
+  color: rgb(202, 7, 7);
+  background-color: transparent;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+.transactions {
+  min-height: 250px;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+#submit {
+  background-color: #ffc93c;
+  border: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  box-shadow: 1px 1px 3px;
+  grid-column: 3 / span 3;
+  cursor: pointer;
+}
+input {
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  width: 90%;
+  text-align: center;
+  border: none;
+  box-shadow: inset 1px 1px 3px;
+}
+#invalid {
+  color: red;
+  font-size: 01rem;
+  grid-column: 1 / span 3;
+  margin: 0.2rem;
+}
+#transaction-text {
+  grid-column: 1;
+}
+form {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+}
