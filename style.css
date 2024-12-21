@@ -1,6 +1,7 @@
 body {
   background-color: #155263;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   min-height: 100vh;
   font-family: "pt sans";
@@ -118,4 +119,13 @@ input {
 form {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr;
+}
+.attribution {
+  font-size: 0.9rem;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  margin-bottom: 2rem;
+  color: #ff6f3c;
 }
