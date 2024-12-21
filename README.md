@@ -1,6 +1,6 @@
 # Transaction Tracker
 
-A simple transaction tracker application that allows users to record, display, and manage their income and expense transactions. The application dynamically updates the total income, total expense, and the balance as transactions are added or removed.
+A simple transaction tracker application that allows users to record, display, and manage their income and expense transactions. The application dynamically updates the total income, total expense, and the balance as transactions are added or removed. [you can view it here](https://expenseztracker.netlify.app/) 
 
 ## Features
 
